@@ -1,6 +1,16 @@
+@font-face {
+    font-family: Norse;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: 'tiltNeon';
+    src: url(./assets/Tilt_Neon/static/TiltNeon-Regular.ttf) format('truetype');
+}
+
+
 body{
     text-align: center;
-    white-space: nowrap;
 }
 
 #flexContainer{
@@ -58,7 +68,10 @@ height: 100%;
     flex-basis: 100%;
     vertical-align: middle;
     font-size: calc(1vw + 2vh);
+    white-space: nowrap;
+    font-family: Norse, Verdana, Geneva, Tahoma, sans-serif
 }
+
 #logoImage>img{
     height: 100%;
     width: 100%;
@@ -82,7 +95,7 @@ span element doesn't have default margin
     gap: 0px;
 */
     bottom: 0px;
-    background-color: red;
+    background-color: rgba(34, 54, 97, 0.3);
     color: white;
     
 }
@@ -101,4 +114,19 @@ span element doesn't have default margin
 }
 #signUpForm>input{
     flex:2;
+}
+
+#signUpTop{
+    margin: 10px;
+    padding: 40px;
+}
+
+#textSignUpTop{
+    color: rgb(54, 58, 124);
+    font-family: "tiltNeon", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(1.5vh + 1.5vw);
+    text-align: left;
+    font-weight: 500;
+    padding: 15px;
+    margin: 5px;
 }
