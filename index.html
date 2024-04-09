@@ -10,6 +10,40 @@
 </head>
 
 <body>
-    
+    <div id="flexContainer">
+        <div id="leftSide">
+            <div id="logoImage">
+                <img src="./assets/logo_700x.png" alt="TMUlogo">
+            </div>
+            <span id="logoText">T M U</span>
+            <p id="imageCredits">image credits ? </p>
+        </div>
+        <div id="rightSide">
+            <div id="signUpTop">
+                <p id="textSignUpTop">randomtext on top</p>
+            </div>
+            <div id="signForm">
+                <form class="ran" id="signUpForm" action="" method="post">
+                    <h1>Sign Up!</h1>
+                    <label for="FirstName"><span>First Name</span></label>
+                    <input type="text" id="FirstName" name="FirstName" required></input>
+                    <label for="LastName"><span>Last Name</span></label>
+                    <input type="text" id="LastName" name="LastName" required></input>
+                    <label for="email"><span>email</span></label>
+                    <input type="email" id="email" name="email" required></input>
+                    <label for="phoneNumber"><span>Phone Number</span></label>
+                    <input type="Phone" id="phoneNumber" name="phoneNumber" required></input>
+                    <label for="password"><span>Password</span></label>
+                    <input type="password" id="password" name="password" required></input>
+                    <label for="confirmPassword"><span>Confirm Password</span></label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required></input>
+                </form>
+            </div>
+            <div id="signUpBottom">
+                <button type="submit" form="signUpForm">Create Account</button>
+                <p id="textSignUpBottom">randomtext at bottom</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
