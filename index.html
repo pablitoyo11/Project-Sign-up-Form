@@ -45,15 +45,15 @@
                     </div>
                     <div id="inputBox">
                         <label for="phoneNumber"><span>Phone Number</span></label>
-                        <input type="Phone" id="phoneNumber" name="phoneNumber" placeholder="+6 17 556 7791" required></input>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9 +]{7,20}$" placeholder="+6 17 556 7791" required></input>
                     </div>
                     <div id="inputBox">
                         <label for="password"><span>Password</span></label>
-                        <input type="password" id="password" name="password" placeholder="*********" required></input>
+                        <input type="password" id="password" name="password" minlength="6" placeholder="*********" required></input>
                     </div>
                     <div id="inputBox">
                         <label for="confirmPassword"><span>Confirm Password</span></label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="*********" required></input>
+                        <input type="password" id="confirmPassword" name="confirmPassword" minlength="6" placeholder="*********" required></input>
                     </div>
                 </form>
                 
