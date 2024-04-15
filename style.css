@@ -14,9 +14,13 @@
 }
 
 
-body{
+body, html {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
+
 
 #flexContainer{
     display: flex;
@@ -49,7 +53,7 @@ body{
 }
 
 #logoContainerBackground{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(125 55 55 / 20%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -107,12 +111,12 @@ span element doesn't have default margin
 
 #signUpForm{
     font-family: var(--font-family-tiltNeon);
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row; 
     align-content: center;
-    padding: 5px 30px;
-    margin: 10px;
+    padding: 17px 30px;
     justify-content: space-evenly;
 }
 
@@ -129,7 +133,6 @@ flex: 1 0 100%;
     min-width: 250px;
     width: 30%;
     height: 50px;
-    margin: 10px;
     gap: 20px;
 }
 
@@ -143,24 +146,41 @@ flex: 1 0 100%;
     min-width: 120px;
     max-width: 200px;
 }
-
-#signUpTop{
-    margin: 15px;
-    padding: 30px;
+#signUpForm>#inputBox>input{
+transition: background-color 0.3s; 
+}
+#signUpForm>#inputBox>input:focus{
+    background-color: red;
 }
 
-#signUpTop>p{
-    color: rgb(54, 58, 124);
-    font-family: var(--font-family-tiltNeon);
-    font-size: calc(1.1vh + 1.2vw);
-    text-align: left;
-    font-weight: 500;
+#signUpForm>#inputBox>input:valid{
+    background-color: rgba(87, 255, 87, 0.7);
+}
+#signUpForm>#inputBox>input:invalid{
+    background-color: rgb(104, 42, 42);
+}
+#signUpForm>#inputBox>input:hover{
+    background-color: rgb(255, 255, 255);
+}
 
+#signUpTop{
+    margin: 10px 0px;
+    padding: 5px 50px;
+}
+
+#signUpTop{
+    font-family: var(--font-family-tiltNeon);
+    text-align: left;
+}
+#signUpTop>#textSignUpTop{
+    color: rgb(0 180 255);
+    font-size: calc(1.1vh + 1.2vw);
+    font-weight: 500;
 }
 
 #signUpTop>#textSignUpTopSignature{
-    padding: 15px 20px;
-    margin: 10px;
+    color: rgb(0 215 255);
+    padding: 5px 30px;
     font-size: calc(1.1vh + 1.3vw);
     font-weight: 600;
 }
@@ -174,15 +194,12 @@ flex: 1 0 100%;
 }
 
 #signUpBottom>#textSignUpBottom{
+    font-family: var(--font-family-norse);
+    font-size: 19px;
     max-width: 70%;
+    font-weight: 600;
 }
 
-
-#signUpBottom>button {
-}
-
-#signUpBottom>button:hover {
-}
 
 #signUpBottom>button {
     background-color: #ffffff69;
@@ -192,8 +209,7 @@ flex: 1 0 100%;
     border-radius: 28px;
     padding: 15px 30px;
     position: relative;
-    transition: background-color 0.5s; 
-
+    transition: background-color 0.4; 
 }
 
 #signUpBottom>button::before {
@@ -207,7 +223,33 @@ flex: 1 0 100%;
     border-radius: 28px; 
 }
 
+#signUpForm:hover h1{
+    color: yellow;
+}
+#signUpForm>#inputBox:hover{
+    color: yellow;
+    transition: color 0.8s;
+}
+
 #signUpBottom>button:hover {
-    background-color: #007bff; /* Change background color to blue on hover */
-    color: #fff; /* Change text color to white on hover */
+    background-color: #007bff;
+    color: #fff;
+}
+#signUpBottom>#textSignUpBottom>a{
+text-decoration: none;
+}
+
+#signUpBottom>#textSignUpBottom>a:visited{
+    color: rgb(45, 179, 189);
+}
+#signUpBottom>#textSignUpBottom>a::before{
+    color: rgb(10, 239, 255);
+}
+#signUpBottom>#textSignUpBottom>a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#textSignUpBottom:hover #champion{
+    color: yellow;
 }
