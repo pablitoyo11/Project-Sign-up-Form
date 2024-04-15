@@ -1,3 +1,8 @@
+:root{
+    --font-family-norse: Norse, Verdana, Geneva, Tahoma, sans-serif;
+    --font-family-tiltNeon: "tiltNeon", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 @font-face {
     font-family: Norse;
     src: url(./assets/Norse-Bold.otf);
@@ -69,7 +74,7 @@ height: 100%;
     vertical-align: middle;
     font-size: calc(1vw + 2vh);
     white-space: nowrap;
-    font-family: Norse, Verdana, Geneva, Tahoma, sans-serif
+    font-family: var(--font-family-norse);
 }
 
 #logoImage>img{
@@ -101,32 +106,73 @@ span element doesn't have default margin
 }
 
 #signUpForm{
+    font-family: var(--font-family-tiltNeon);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column; 
-    align-items: center;
-    padding: 10px;
-    margin: 5px;
+    flex-direction: row; 
+    align-content: center;
+    padding: 5px 30px;
+    margin: 10px;
+    justify-content: space-evenly;
 }
 
-#signUpForm>label{
-    flex:1;
+#signUpForm>h1{
+font-family: var(--font-family-norse);
+flex: 1 0 100%;
 }
-#signUpForm>input{
-    flex:2;
+
+#signUpForm>#inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    min-width: 250px;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    gap: 20px;
+}
+
+
+#signUpForm>#inputBox>label{
+   /* margin: 10px*/
+}
+#signUpForm>#inputBox>input{
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 120px;
+    max-width: 200px;
 }
 
 #signUpTop{
-    margin: 10px;
-    padding: 40px;
+    margin: 15px;
+    padding: 30px;
 }
 
-#textSignUpTop{
+#signUpTop>p{
     color: rgb(54, 58, 124);
-    font-family: "tiltNeon", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: calc(1.5vh + 1.5vw);
+    font-family: var(--font-family-tiltNeon);
+    font-size: calc(1.1vh + 1.2vw);
     text-align: left;
     font-weight: 500;
-    padding: 15px;
-    margin: 5px;
+
+}
+
+#signUpTop>#textSignUpTopSignature{
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: calc(1.1vh + 1.3vw);
+    font-weight: 600;
+}
+
+#signUpBottom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
+}
+
+#signUpBottom>#textSignUpBottom{
+    max-width: 70%;
 }
