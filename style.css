@@ -176,3 +176,38 @@ flex: 1 0 100%;
 #signUpBottom>#textSignUpBottom{
     max-width: 70%;
 }
+
+
+#signUpBottom>button {
+}
+
+#signUpBottom>button:hover {
+}
+
+#signUpBottom>button {
+    background-color: #ffffff69;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    border-radius: 28px;
+    padding: 15px 30px;
+    position: relative;
+    transition: background-color 0.5s; 
+
+}
+
+#signUpBottom>button::before {
+    content: ''; 
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid #fff;
+    border-radius: 28px; 
+}
+
+#signUpBottom>button:hover {
+    background-color: #007bff; /* Change background color to blue on hover */
+    color: #fff; /* Change text color to white on hover */
+}
