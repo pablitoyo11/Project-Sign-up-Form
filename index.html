@@ -7,7 +7,7 @@
     <title>Project-Sign-up-Form</title>
     <link rel="preload" href="style.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 <p id="textSignUpTopSignature">Kali de Machina</p>
             </div>
             <div id="signForm">
-                <form class="ran" id="signUpForm" action="" method="post">
+                <form onsubmit="return passwordValidator();" id="signUpForm" action="" method="post">
                     <h1>Sign Up!</h1>
                     <div id="inputBox">
                         <label for="FirstName"><span>First Name</span></label>
@@ -59,7 +59,7 @@
                 
             </div>
             <div id="signUpBottom">
-                <button type="submit" form="signUpForm">Create Account</button>
+                <button type="submit" id="btnCreateAccount" form="signUpForm" >Create Account</button>
                 <p id="textSignUpBottom">Returning <span id="champion">champion?</span> <br> <a href="./index.html">Log in now</a> and catch up on recent games, join the conversation!</p>
             </div>
         </div>

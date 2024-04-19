@@ -226,7 +226,7 @@ transition: background-color 0.3s;
 #signUpForm:hover h1{
     color: yellow;
 }
-#signUpForm>#inputBox:hover{
+#signUpForm>#inputBox:hover:enabled{
     color: yellow;
     transition: color 0.8s;
 }
@@ -253,3 +253,18 @@ text-decoration: none;
 #textSignUpBottom:hover #champion{
     color: yellow;
 }
+
+
+
+/* tried to do disabled button when the form was incomplete + javascript, didn't use it
+#signUpBottom>button:active:hover:not {
+    background-color: #ff0037;
+    color: #fff;
+}
+
+#signUpBottom>button[disabled] {
+      opacity: 0.4;
+      background-color: #ff0037;
+      color: #ffffff;
+}
+*/
